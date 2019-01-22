@@ -1,0 +1,42 @@
+<view class="list">
+  <!-- topbar S -->
+  <view class='topbar'>
+  </view>
+  <!-- topbar E -->
+  <!-- banner S -->
+  <view class='banner'>
+    <image src="../../images/banner.png" mode="widthFix" />
+  </view>
+  <!-- banner E -->
+  <!-- hotellist S -->
+  <ul class='hotellist'>
+    <li wx:for="{{list}}" wx:for-item="item" wx:key="{{item.hotelId}}">
+      <!-- <view class='pic'>
+        <image src="{{item.picUrl}}" lazy-load />
+      </view> -->
+      <view class='itemContent'>
+        <p class='name'>{{item.title}}</p>
+        <p class="common">
+          <span class="c1">5.0</span>
+          <span class="c2">分</span>
+          <span class="c3">非常好</span>
+          <span class="c4">888条点评</span>
+        </p>
+        <!-- <p class="type"> </p> -->
+        <p class="cir">{{item.sub_title}}</p>
+        <p class="tag">
+          <span class="t1">返</span>
+          <span class="t2">新客专享</span>
+        </p>
+        <view class='priceWrap'>
+          <p class="price">
+            <span class="p1">￥</span>
+            <span class="p2">520</span>
+            <span class="p3">起</span>
+          </p>
+        </view>
+      </view>
+    </li>
+  </ul>
+  <!-- hotellist E -->
+</view>

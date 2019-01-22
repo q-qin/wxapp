@@ -1,0 +1,33 @@
+<scroll-view scroll-y class='container'>
+
+  <view class="content">
+    <view class="h2">
+      简介
+      <p>这套框架是一款轻量级的小程序开发框架，基于原生小程序开发模式，进行了通用功能的扩展，优化了原生API的性能。</p>
+    </view>
+    <view class="img" >
+      <image src="../../images/introduce.png" mode="widthFix" />
+    </view>
+    <view class="h2">
+      ES6 Class语法
+      <p>原生小程序注册App，Page，Component时采用对象工厂的写法，且组件实例无法进行原型链继承。如此书写的应用，对于需要抽象到所有组件的公共属性和方法，无法进行有效率的继承和封装。</p>
+      <p>框架改写了小程序组件的注册方式，改用es6 Class语法实现方法和属性的继承。并提供了基类BasePage，BaseComponent，用于丰富公共属性、方法，也可以封装生命周期的逻辑处理，或提供其他生命周期钩子。</p>
+    </view>
+    <view class="h2">
+      API
+      <p>原生小程序的wx对象下挂载了很多方法，为了不污染wx对象，大部分方法都直接复制到了框架全局对象API上。</p>
+    </view>
+    <view class="h2">
+      API promisify
+      <p>
+        小程序的原生api中涉及异步操作的方法，采用通过配置对象传递回调函数的方式实现。
+      </p>
+      <p class="code">API.showToast({ title: 'test' }).then(res=>{}).catch(res=>{}).finally(res=>{})</p>
+      <!-- <wemark md="{{md}}" link highlight type="wemark"></wemark> -->
+    </view>
+  </view>
+  <!-- <web-view src="https://mp.weixin.qq.com/"></web-view> -->
+  <view class='btnbox'>
+    <button type="primary" size="default" class='begin' bindtap="tapBegin" form-type="submit">查看demo</button>
+  </view>
+</scroll-view>

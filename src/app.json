@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#151223",
+    "navigationBarTitleText": "小程序框架",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#151223"
+  }
+}
