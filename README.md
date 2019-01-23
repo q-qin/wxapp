@@ -34,7 +34,7 @@ export default getData
     })
  }
  ```
- * 3.框架提供了一个全局事件中心，是发布订阅模式的一个封装，可以跨页面进行事件消息传递。$setData为优化原生setData,支持回调[,callback]
+ * 3.框架提供了一个全局事件中心，是发布订阅模式的一个封装，可以跨页面进行事件消息传递。$setData为优化原生setData,支持回调[,callback]
 ```
 a.js
 import { Event } from './lib/core/index'
